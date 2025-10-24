@@ -629,7 +629,6 @@ function generateRandomKey() {
   return key;
 }
 
-
 browser.runtime.onMessage.addListener((message) => {
   if (message.type === 'context-menu') { /* from context menu */
     if (message.data === 'open-popup') {
@@ -672,3 +671,4 @@ function onStorageChange(changes, area) {
 
 
 browser.storage.onChanged.addListener(onStorageChange);
+

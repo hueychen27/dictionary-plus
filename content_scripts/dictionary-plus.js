@@ -671,5 +671,3 @@ function onStorageChange(changes, area) {
 }
 
 browser.storage.onChanged.addListener(onStorageChange);
-
-
